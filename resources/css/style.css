@@ -1,4 +1,7 @@
 /* moosegit.github.io (style.css) */
+h1{
+  text-align: center;
+}
 .moosegit{
   font-family: Helvetica;
   font-size: 30px;
