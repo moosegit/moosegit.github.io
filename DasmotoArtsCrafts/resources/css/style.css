@@ -1,0 +1,38 @@
+/*DasmotoArtsCrafts (style.css)*/
+html{
+  font-family: Helvetica;
+  border: 3px solid red;
+  opacity: 0.5;
+}
+
+#header,
+h1-background{
+  font-size: 100px;
+  color: khaki;
+  text-align: center;
+  background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/pattern.jpeg) no-repeat;
+}
+
+h2{
+  font-size: 32px;
+}
+
+.brush{
+  color: white;
+  background-color: mediumspringgreen;
+}
+
+.frame{
+  color: white;
+  background-color: lightcoral;
+}
+
+.paint{
+  color: white;
+  background-color: skyblue;
+}
+
+.price{
+  font-weight: bold;
+  color: blue;
+}
