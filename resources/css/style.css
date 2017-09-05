@@ -1,9 +1,17 @@
-/* moosegit.github.io home page */
+/* moosegit.github.io (style.css) */
 
-h1,
+#header,
+h1-background{
+  text-align: center;
+}
 .moosegit{
-  font-family: Georgia;
-  font-size: 20px;
+  font-family: Helvetica;
+  font-size: 30px;
   color: teal;
+}
 
+.github{
+  font-family: Helvetica;
+  font-size: 45px;
+  color: teal;
 }
