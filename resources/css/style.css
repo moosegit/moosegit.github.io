@@ -1,15 +1,20 @@
 /* moosegit.github.io (style.css) */
 h1{
+  font-style: normal;
   text-align: center;
 }
-.moosegit{
+
+h1-header {
   font-family: Helvetica;
-  font-size: 30px;
   color: teal;
 }
 
-.github{
-  font-family: Helvetica;
-  font-size: 45px;
-  color: teal;
+h1-header,
+.moosegit {
+  font-size: 30px;
+}
+
+h1-header,
+.github {
+  font-size: 65px;
 }
