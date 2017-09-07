@@ -4,17 +4,14 @@ h1{
   text-align: center;
 }
 
-h1-header {
+.moosegit {
   font-family: Helvetica;
+  font-size: 30px;
   color: teal;
 }
 
-h1-header,
-.moosegit {
-  font-size: 30px;
-}
-
-h1-header,
 .github {
+  font-family: Helvetica;
   font-size: 65px;
+  color: teal;
 }
