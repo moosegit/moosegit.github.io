@@ -1,1 +1,26 @@
 /* Excursion -- style.css */
+html {
+  background-color: black;
+  font-family: Verdana sans-serif;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 300;
+}
+
+.download {
+  color: aquamarine;
+}
+
+.excursion {
+  font-size: 21px;
+  color: gray;
+}
+
+.footer {
+  text-align: right;
+  color: gray;
+}
