@@ -4,20 +4,15 @@ html {
   margin: auto;
 }
 
-/*
-position: relative;
-height: auto;
-width: auto;
-*/
-
 body {
-  font-family: Verdana;
+  font-family: Verdana, sans-serif;
   text-align: center;
   color: white;
 }
 
 h1 {
   font-size: 50px;
+  font-weight: normal;
 }
 
 h2 {
@@ -25,20 +20,24 @@ h2 {
   font-weight: 300;
 }
 
-.download {
-  font-size: 16px;
-}
-
 a:link, a:visited, a:active{
   color: Aquamarine;
 }
 
+.download {
+  font-size: 16px;
+}
+
+.excursion, .footer {
+  color: gray;
+}
+
 .excursion {
   font-size: 21px;
-  color: gray;
+  /* color: gray; */
 }
 
 .footer {
   text-align: right;
-  color: gray;
+  /* color: gray; */
 }
