@@ -1,0 +1,51 @@
+/* Broadway Design -- style.css */
+/* HTML list of sectional selectors:
+/* div's: #top-header, bottom-header, footer */
+/* class: h1-background, nobull, h5-background, footer-list, copyright */
+
+html{
+  border: 2px solid red;
+  margin: auto;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  color: gray;
+}
+
+a:link, a:visited, a:active{
+  color: white;
+}
+
+ul, li, .nobull {
+  font-size: 18px;
+  padding: 5px 20px;
+}
+
+#top-header,
+.h1-background {
+  background: url('../images/the-flatiron-building.png') no-repeat;
+  font-size: 70px;
+  text-align: center;
+  color: white;
+}
+
+#bottom-header,
+.h5-background {
+  background: url('../images/the-flatiron-building.png') no-repeat;
+  font-size: 23px;
+  text-align: center;
+  color: white;
+}
+
+.copyright {
+  font-size: 11px;
+
+}
+
+#footer {
+  background-color: dimgray;
+  text-align: left;
+  color: white;
+}
