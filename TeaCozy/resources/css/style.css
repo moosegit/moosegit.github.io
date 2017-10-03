@@ -1,0 +1,168 @@
+/* Tea Cozy - style.css */
+
+html, body {
+  height: 100%;
+  max-width:
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Header Section */
+
+.teacozy {
+  height: 50px;
+  display: inline-flex;
+  position: fixed;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.header {
+  font-family: Helvetica, sans-serif;
+  height: 69px;
+  width: 1200px;
+  display: inline-flex;
+  position: fixed;
+  background: black;
+  border-bottom: 1px solid seashell;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  padding-right: 30px;
+  padding-top: 12px;
+  font-size: 18px;
+}
+
+a:hover {
+  background-color: DarkGray;
+}
+
+a:link, a:visited, a:active {
+  color: seashell;
+}
+
+/* Top Section (Mission)*/
+
+#mission {
+  background: url('../images/img-mission-background.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  height: 700px;
+  width: 1200px;
+}
+
+.our-mission {
+  font-family: Helvetica, sans-serif;
+  background-color: black;
+  height: 80px;
+  width: 1200px;
+  padding-bottom: 60px;
+  align-content: center;
+}
+
+/* Middle Section (Tea of the Month) */
+
+#store {
+  display: flex-block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  font-family: Helvetica, sans-serif;
+  padding-top: 45px;
+}
+
+.tea {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.current-product {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-family: Helvetica, sans-serif;
+  height: 200px;
+  width: 300px;
+  margin: 40px 16px;
+}
+
+.lable {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-family: Helvetica, sans-serif;
+  padding: 10px 10px;
+}
+
+/* Bottom Section (Locations) */
+
+.container {
+  display: inline-flex;
+  font-family: Helvetica, sans-serif;
+}
+
+.sites {
+  background: url('../images/img-locations-background.jpg') no-repeat;
+  height: 600px;
+  width: 1000px;
+  display: flex-block;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+}
+
+#header2 {
+  align-self: baseline;
+  font-family: Helvetica, sans-serif;
+  padding-top: 60px;
+  color: white;
+}
+
+.site {
+  display: inline-block;
+  flex-direction: row;
+  font-family: Helvetica, sans-serif;
+  height: auto;
+  width: 300px;
+  opacity: 1;
+  margin 40px;
+  background-color: black;
+
+}
+
+/* Footer */
+
+.footer {
+  font-family: Helvetica, sans-serif;
+  height: 200px;
+  opacity: 0.9;
+}
+
+.copyright {
+  font-family: Helvetica, sans-serif;
+  text-align: left;
+  padding-left: 20px;
+  opacity: 0.9;
+}
