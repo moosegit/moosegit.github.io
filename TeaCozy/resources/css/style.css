@@ -2,12 +2,11 @@
 
 html, body {
   height: 100%;
-  max-width:
+  width:100%
   font-family: Helvetica, sans-serif;
   font-size: 22px;
   color: seashell;
   background-color: black;
-  opacity: 0.9;
   text-align: center;
 }
 
@@ -29,7 +28,7 @@ body {
 .header {
   font-family: Helvetica, sans-serif;
   height: 69px;
-  width: 1200px;
+  width: 100%;
   display: inline-flex;
   position: fixed;
   background: black;
@@ -66,6 +65,8 @@ a:link, a:visited, a:active {
   align-items: center;
   height: 700px;
   width: 1200px;
+  /*opacity: 0.9;*/
+
 }
 
 .our-mission {
@@ -104,6 +105,7 @@ a:link, a:visited, a:active {
   height: 200px;
   width: 300px;
   margin: 40px 16px;
+  /*opacity: 0.9;*/
 }
 
 .lable {
@@ -131,6 +133,7 @@ a:link, a:visited, a:active {
   align-content: center;
   align-items: center;
   font-family: Helvetica, sans-serif;
+  /*opacity: 0.9;*/
 }
 
 #header2 {
@@ -157,12 +160,10 @@ a:link, a:visited, a:active {
 .footer {
   font-family: Helvetica, sans-serif;
   height: 200px;
-  opacity: 0.9;
 }
 
 .copyright {
   font-family: Helvetica, sans-serif;
   text-align: left;
   padding-left: 20px;
-  opacity: 0.9;
 }
