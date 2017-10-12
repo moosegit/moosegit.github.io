@@ -106,9 +106,8 @@ a:link, a:visited, a:active {
 }
 
 /* Bottom Section */
-/* .store container for store products */
 
-#store {
+.store {
   display: flex-block;
   flex-direction: row;
   flex-wrap: wrap;
@@ -117,6 +116,7 @@ a:link, a:visited, a:active {
   width: 100%;
   background-color: white;
   padding-top: 3rem;
+  top: 0;
 }
 
 .product {
