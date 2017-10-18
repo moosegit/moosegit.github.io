@@ -1,100 +1,83 @@
-/* SecretAgentSupply - style.css */
-/* Default font-size: 18px (1.125em large or 112.5%) */
-/* Source: https://websemantics.uk/tools/convert-pixel-point-em-rem-percent/ */
-/* font-size 1rem = 18px */
-/* Source: https://developer.mozilla.org/en-US/docs/Web/CSS/font-size */
-
-/* margin-left = 3.33rem */
-/* moto image = 1080px */  /* site container = 960px */
-/* ((1080px - 960px) / 18px) / 2 = 3.33rem */
-
+/* Secret Agent Supply - style.css */
 
 html {
   height: 100%;
   width:100%;
   font-family: Helvetica, sans-serif;
   font-size: 1.125rem;
-  background-color: black;
 }
 
 body {
   height: 100%
-  padding: 0;
-  margin: 0;
-}
-
-h3, h5, h6 {
-  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.125rem;
 }
 
 .header {
   display: flex;
-  height: 3.64rem;
-  font-size: 1rem;
-  align-items: center;
+  width: auto;
+  height: 4rem;
+  background-color: black;
 }
 
 .logo {
   display: inline-flex;
   height: 2.32rem;
-  margin-left: 3.83rem;  /* 3.33rem (default) + 0.5 */
+  margin-left: 3rem;
+  margin-top: 1rem;
 }
 
-.page-title {
+.heading {
   display: inline-flex;
-  align-items: center;
-  padding-left: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.66rem;
+  margin-left: 3rem;
+  color: white;
 }
-
-/* Top Section */
 
 .top-background {
-  background: url('../images/moto.jpeg') no-repeat;
+  background: url("../images/moto.jpeg") no-repeat;
   background-size: cover;
-  display: inline-flex;
-  height: 25rem;
-  width: 100%;
-  position: relative;
-}
-
-.top-message {
+  background-position: center;
   display: flex-block;
-  flex-direction: row;
+  height: 25rem;
+}
+
+.headline {
+  display: flex;
+  flex-wrap: wrap;
   background-color: black;
+  color: white;
+  width: 25rem;
+  height: 8rem;
   position: absolute;
+  padding: 2rem 3rem;
+  margin-left: 3rem;
   top: 9rem;
-  left: 3.33rem;
-  height: 9rem;
-  width: 24rem;
 }
 
-.top-subject {
-  display: inline-block;
-  font-size: 1rem;
-  padding-top: 2rem;
-  padding-left: 3rem;
-
-}
-
-.top-item {
-  display: inline-block;
+.headline2 {
   font-size: 2rem;
-  padding-top: 0.25rem;
-  padding-left: 3rem;
+  line-height: 2.5rem;
+  margin: 0.25rem 0;
 }
 
 /* Nav Menu */
 
-.nav-menu {
-  display: flex;
+.menu-desktop {
+  display: inline-flex;
   justify-content: space-evenly;
   align-items: center;
-  position: absolute;
-  bottom: 0;
+  margin-top: 21rem;
   background-color: firebrick;
-  height: 2.7rem;
+  height: 4rem;
   width: 100%;
   color: white;
+}
+
+/* Hide when scree > 1024px */
+.menu-tablet {
+  display: none;
 }
 
 a:hover {
@@ -105,103 +88,113 @@ a:link, a:visited, a:active {
   color: white;
 }
 
-/* Bottom Section */
+
+/* Store Products, Images */
+
+.container {
+  /*height: 100%;*/
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
 .store {
-  display: flex-block;
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  height: 26rem;
-  width: 100%;
+  justify-content: space-around;
   background-color: white;
-  padding-top: 3rem;
   top: 0;
+  /*width: 100%;*/
+
 }
 
 .product {
-  padding-left: 3.33rem
-}
-
-.product-image {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
   align-content: center;
   align-items: center;
-  vertical-align: top;
-  height: 13rem;
-  width: 25%;
-  padding-right: 2rem;
-  background-color: white;
-  border: 4px solid black;
+  align-items: stretch;
+  width: 30%;
+  border: solid black 4px;
+  margin-top: 3rem;
 }
 
-.product-lable {
-  display: inline-flex;
+.labels {
+  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-content: center;
+  justify-content: space-around;
+
+}
+
+.label  {
+  text-align: center;
   align-items: center;
+  justify-content: center;
   background-color: black;
-  padding-right: 2rem;
-  width: 25%;
   color: white;
-  border: 4px solid black;
+  height: 2rem;
+  width: 30%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.4rem
+
 }
 
-.data {
-  padding-top: 3rem;
-  padding-left: 3.33rem;
+
+/* Store Location Data */
+
+.bottom-container {
+  /*max-width: 960px;*/
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-.data-label {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+.store-info {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
   height: 3rem;
-  width: 35%;
+  width: 100%;
+  margin-top: 3rem;
+
+}
+
+.store-data {
   background-color: black;
-  padding-left: 2rem;
+  color: white;
+  width: 35%;
+  height: 1rem;
+  padding: 1rem 0 1rem 2rem;
+
 }
 
-.data-label-middle {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  height: 3rem;
-  width: 6rem;
-  background-color: white;
+.values {
+  display: flex;
+  justify-content: space-between;
 }
 
-.data-numbers {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: white;
-  color: black;
+.value {
+  width: 35%;
+  height: 1rem;
+  padding-right: 2rem;
 }
 
-.data-numbers-middle {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  vertical-align: top;
-  padding: 0 7rem;
-}
 
 /* Footer Section */
 
+.footer-container {
+  margin-top: 3rem;
+}
+
 .footer {
   display: flex;
-  height: 9rem;
+  height: 5rem;
+  background-color: black;
   width: 100%;
 }
 
 .copyright {
   display: inline-flex;
-  align-items: center;
+  padding-top: 2rem;
+  font-size: 1rem;
+  color: white;
   text-align: left;
-  padding-left: 3.33rem;
+  padding-left: 3rem;
 }
