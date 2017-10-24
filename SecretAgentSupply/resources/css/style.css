@@ -288,7 +288,7 @@ a:link, a:visited, a:active {
 /* =================================== */
 /* Media - Screen formatting - Phone */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 470px) {
 
   html body {
     height: auto;
