@@ -7,6 +7,12 @@ html body {
   font-size: 1.125rem;
 }
 
+.container{
+
+}
+
+/* Header Section */
+
 .header {
   display: flex;
   width: auto;
@@ -42,7 +48,6 @@ html body {
   flex-wrap: wrap;
   background-color: black;
   color: white;
-  /*width: 25%;*/
   width: 20rem;
   height: 10%;
   padding-top: 2rem;
@@ -89,13 +94,7 @@ a:link, a:visited, a:active {
   color: white;
 }
 
-
 /* Store Products, Images */
-
-.container {
-  margin-left: 3.3rem;
-  margin-right: 3.3rem;
-}
 
 .store {
   display: flex;
@@ -111,6 +110,7 @@ a:link, a:visited, a:active {
   align-items: flex-start;
   align-items: center;
   vertical-align: middle;
+  height: 9rem;
   width: 30%;
   border: solid black 4px;
   margin-top: 3rem;
@@ -121,7 +121,6 @@ a:link, a:visited, a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
 
 .label  {
@@ -139,70 +138,59 @@ a:link, a:visited, a:active {
 
 }
 
-
 /* Store Location Data */
-
-.bottom-container {
-  margin-left: 4.3rem;
-  margin-right: 4.3rem;
-}
 
 .store-info {
   display: flex;
   justify-content: space-between;
-  background-color: white;
-  height: 3rem;
-  width: 100%;
-  margin-top: 3rem;
-
+  flex-wrap: wrap;
+  height: auto;
+  margin: 3rem 1.5rem;
 }
 
-.store-data {
+.location, .hour {
+  justify-content: center;
   background-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  height: 3rem;
+  width: 35%;
   color: white;
+}
+
+.value1, .value2 {
+  justify-content: center;
+  background-color: white;
   width: 35%;
-  height: 1rem;
-  padding: 1rem 0 1rem 2rem;
-
+  color: black;
 }
 
-.values {
-  display: flex;
-  justify-content: space-between;
+.value2 {
+  margin-right: 2rem;
 }
-
-.value {
-  width: 35%;
-  height: 1rem;
-  padding-right: 2rem;
-}
-
 
 /* Footer Section */
-
-.footer-container {
-  margin-top: 3rem;
-}
 
 .footer {
   display: flex;
   height: 5rem;
+  margin-top: 3rem;
   background-color: black;
-  width: 100%;
-}
-
-.copyright {
-  display: inline-flex;
-  padding-top: 2rem;
-  font-size: 1rem;
   color: white;
+  width: 100%;
+  font-size: 1rem;
   text-align: left;
   padding-left: 3rem;
+  align-items: center;
 }
 
-/* Media - Screen formatting */
+/* =================================== */
+/* Media - Screen formatting - Tablet */
 
 @media only screen and (max-width: 1024px) {
+
+/* Header Section */
 
   .logo {
     display: flex;
@@ -210,7 +198,6 @@ a:link, a:visited, a:active {
     margin-left: 0;
     margin-top: 1rem;
   }
-
 
   .menu-tablet {
     display: inline-flex;
@@ -231,6 +218,8 @@ a:link, a:visited, a:active {
     margin: 0;
     padding: 0;
   }
+
+  /* Store Products, Images */
 
   .product {
     display: flex;
@@ -263,10 +252,181 @@ a:link, a:visited, a:active {
     display: none;
   }
 
-  .bottom-container {
-    margin: 0;
+/* Store Location Data */
+
+  .store-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 3rem;
   }
 
+  .location, .hour {
+    justify-content: center;
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    height: 2rem;
+    width: 35%;
+    color: white;
+  }
 
+  .value1, .value2 {
+    width: 35%;
+    color: black;
+  }
+
+}
+
+/* =================================== */
+/* Media - Screen formatting - Phone */
+
+@media only screen and (max-width: 600px) {
+
+  html body {
+    height: auto;
+    width: 100%;
+  }
+
+/* Header Section */
+
+  .heading {
+    display: flex;
+    color: white;
+  }
+
+  .top-background {
+    height: 15rem;
+  }
+
+  .headline {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: 2rem;
+    margin-left: -1rem;
+    margin-top: 9rem;
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  .headline2 {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: -5.5rem;
+  }
+
+/* Nav Menu Section */
+
+  .menu-tablet {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 15rem;
+    background-color: firebrick;
+    height: 4rem;
+    width: 100%;
+    color: white;
+    top: 0;
+  }
+
+  .menu-desktop  {
+    display: none;
+  }
+
+  .product.watch {
+    display: none;
+  }
+
+  .label.l-watch {
+    display: none;
+  }
+
+/* Store Products, Images */
+
+  .product.pen {
+    display: inline-flex;
+    justify-content: center;
+    vertical-align: middle;
+    width: 90%;
+    border: solid black 4px;
+    margin-top: 7rem;
+    padding: 2rem 0;
+  }
+
+  .label.l-pen  {
+    display: inline-flex;
+    flex-flow: wrap;
+    background-color: black;
+    color: white;
+    height: 2rem;
+    width: 90%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+/* Store Location Data */
+
+.store-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  margin: 3rem 1.5rem;
+}
+
+.location{
+  order: 0;
+  background-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  height: 3rem;
+  width: 90%;
+  color: white;
+}
+
+.hour {
+  order: 2;
+  background-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  height: 3rem;
+  width: 90%;
+  color: white;
+}
+
+.value1{
+  order: 1;
+  justify-content: center;
+  background-color: white;
+  width: 90%;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.value2 {
+  order: 3;
+  justify-content: center;
+  background-color: white;
+  width: 90%;
+  color: black;
+}
+
+/* Footer Section */
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    height: 5rem;
+    margin-left: -3rem;
+    justify-content: center;
+    text-align: center;
+  }
 
 }
