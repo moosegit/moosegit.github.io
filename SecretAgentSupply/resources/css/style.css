@@ -181,9 +181,10 @@ a:link, a:visited, a:active {
   width: 100%;
   font-size: 1rem;
   text-align: left;
-  padding-left: 3rem;
   align-items: center;
 }
+
+
 
 /* =================================== */
 /* Media - Screen formatting - Tablet */
@@ -279,12 +280,15 @@ a:link, a:visited, a:active {
     color: black;
   }
 
+
+
+
 }
 
 /* =================================== */
 /* Media - Screen formatting - Phone */
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 600px) {
 
   html body {
     height: auto;
@@ -421,13 +425,13 @@ a:link, a:visited, a:active {
   .footer{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    text-align: center;
     background-color: black;
     color: white;
     height: 5rem;
-    width: auto;
-    /*margin-left: -3rem;*/
-    justify-content: center;
-    text-align: center;
+    width: 100%;
+
   }
 
 }
